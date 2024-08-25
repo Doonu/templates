@@ -1,4 +1,3 @@
 # templates
 
-1) Настроен webpack
-2) Настроен eslint + prettier
+1) wepback + react
