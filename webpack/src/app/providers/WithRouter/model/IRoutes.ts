@@ -1,3 +1,3 @@
 export enum IRoutes {
-    HOME_PAGE = '/',
+  HOME_PAGE = '/',
 }

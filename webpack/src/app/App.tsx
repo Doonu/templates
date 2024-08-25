@@ -1,9 +1,5 @@
-import WithProviders from "./providers";
+import WithProviders from './providers';
 
-const App = () => {
-    return (
-        <WithProviders/>
-    );
-};
+const App = () => <WithProviders />;
 
 export default App;
