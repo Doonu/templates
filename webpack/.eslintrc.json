@@ -60,6 +60,7 @@
   },
   "rules": {
     "react/no-unstable-nested-components": "off",
+    "@typescript-eslint/no-floating-promises": "off",
     "react/react-in-jsx-scope": "off",
     "react/require-default-props": "off",
     "react/jsx-props-no-spreading": "off",

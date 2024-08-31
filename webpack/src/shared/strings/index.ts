@@ -1,1 +1,3 @@
-export const shared = {};
+export const shared = {
+  translate: 'Перевод',
+};
