@@ -1,3 +1,3 @@
 # templates
 
-1) wepback + react
+1) wepback
