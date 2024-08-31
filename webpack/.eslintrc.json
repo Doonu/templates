@@ -1,7 +1,8 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "jest": true
   },
   "extends": [
     "eslint:recommended",
@@ -35,7 +36,12 @@
       "files": ["webpack.config.ts"],
       "rules": {
         "@typescript-eslint/no-var-requires": "off",
-        "import/no-extraneous-dependencies": "off",
+        "import/no-extraneous-dependencies": [
+          "error",
+          {
+            "devDependencies": false
+          }
+        ],
         "import/no-cycle": "off",
         "import/order": "off"
       }
@@ -46,9 +52,6 @@
       "node": {
         "paths": ["src"],
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
-      },
-      "webpack": {
-        "config": "webpack.config.ts"
       }
     },
     "react": {
@@ -72,7 +75,6 @@
     "no-alert": "error",
     "no-multi-spaces": "error",
     "semi": "error",
-    "eslint-disable-next-line": "off",
     "no-duplicate-imports": "error",
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": "warn",
@@ -98,9 +100,15 @@
         "groups": [
           "builtin",
           "external",
-          "internal"
+          "internal",
+          ["parent", "sibling", "index"]
         ],
-        "newlines-between": "always"
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "pathGroupsExcludedImportTypes": ["builtin", "external"]
       }
     ],
     "import/no-extraneous-dependencies": "off",

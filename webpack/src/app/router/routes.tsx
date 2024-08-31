@@ -1,8 +1,7 @@
+import { IRoutes } from '@app/router/IRoutes';
+import NotFoundPage from '@pages/NotFoundPage';
 import React, { lazy } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
-
-import NotFoundPage from '../../pages/NotFoundPage';
-import { IRoutes } from '../providers/WithRouter/model/IRoutes';
 
 const HomePageLazy = lazy(() => import('../../pages/HomePage'));
 const AboutPageLazy = lazy(() => import('../../pages/AboutPage'));

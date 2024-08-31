@@ -1,0 +1,83 @@
+import { breakpoints } from '@shared/constants';
+import { DefaultTheme } from 'styled-components';
+
+const colors: DefaultTheme['colors'] = {
+  brandGreen: {
+    green0: '#F7F8F7',
+    green50: '#ECFDF5',
+    green100: '#D7E8E2',
+    green200: '#A5F5D0',
+    green300: '#6BEAB9',
+    green400: '#30D79B',
+    green500: '#0CBD83',
+    green600: '#019A6B',
+    primary: '#017B59',
+    green800: '#046148',
+    green900: '#04503C',
+    green950: '#012D23',
+  },
+  brandOrange: {
+    orange50: '#FFF8EB',
+    orange100: '#FFEBC6',
+    orange200: '#FFD488',
+    orange300: '#FFB84A',
+    primary: '#FF9A19',
+    orange500: '#F97807',
+    orange600: '#DD5402',
+    orange700: '#B73706',
+    orange800: '#94290C',
+    orange900: '#7A230D',
+    orange950: '#460F02',
+  },
+  base: {
+    base0: '#FFFFFF',
+    base50: '#F5F6F5',
+    base100: '#E6E7E6',
+    base200: '#D0D1D0',
+    base300: '#B0B1AF',
+    base400: '#888987',
+    base500: '#6D6E6C',
+    base600: '#5D5E5C',
+    base700: '#4E504E',
+    base800: '#444644',
+    primary: '#404140',
+    base950: '#262626',
+    base1000: '#1C1C1C',
+  },
+  redErrors: {
+    redErrors50: '#FFF2F0',
+    redErrors100: '#FFE0DD',
+    redErrors200: '#FFC7C1',
+    redErrors300: '#FFA095',
+    redErrors400: '#FF6A59',
+    redErrors500: '#FF3C26',
+    redErrors600: '#FC1F06',
+    primary: '#C51400',
+    redErrors800: '#AF1605',
+    redErrors900: '#90190C',
+  },
+};
+
+export const scConfig: DefaultTheme = {
+  colors,
+  borderRadius: {
+    roundedNon: '0px',
+    roundedXS: '4px',
+    roundedS: '8px',
+    roundedM: '12px',
+    roundedL: '16px',
+    roundedXL: '20px',
+    roundedFull: '99%',
+  },
+  shadow: {
+    base: '0px 0px 12px 0px rgba(14, 53, 42, .1)',
+    active: '0px 0px 20px 0px rgba(14, 53, 42, .2)',
+  },
+  breakpoints: {
+    maxMobile: `${breakpoints.maxMobile}px`,
+    maxTablets: `${breakpoints.maxTablets}px`,
+    maxLaptops: `${breakpoints.maxLaptops}px`,
+    maxOldDesktops: `${breakpoints.maxOldDesktops}px`,
+    maxDesktops: `${breakpoints.maxDesktops}px`,
+  },
+};
